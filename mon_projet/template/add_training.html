@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Training</title>
+</head>
+<body>
+    <h1>Add Training</h1>
+    <form  method="post">
+        <!----{% csrf_token %}---> 
+        <label for="Domain">Domain:</label>
+<!----      <select name="domain" id="domain">
+            {% for domain in domains %}
+                <option value="{{Domain.id }}">{{ Domain.name }}</option>
+            {% endfor %}
+        </select>--> 
+        <br>
+        <label for="training_name">Training Name:</label>
+        <input type="text" name="training_name" id="training_name" required>
+        <br>
+        <label for="training_description">Training Description:</label>
+        <textarea name="training_description" id="training_description" rows="5" required></textarea>
+        <br>
+        <button type="submit">Add Training</button>
+    </form>
+</body>
+</html>
+
